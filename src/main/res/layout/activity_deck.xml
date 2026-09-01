@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a1a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Status Bar -->
+        <TextView
+            android:id="@+id/tvSyncStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to Sync"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#222"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Deck 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#222"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DECK 1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/ivBeatIndicator1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#444"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvTempolDeck1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempo: 100% (120)"
+                android:textSize="14sp"
+                android:textColor="#bbb"
+                android:layout_marginBottom="10dp" />
+
+            <SeekBar
+                android:id="@+id/seekBarDeck1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="50"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnPlayDeck1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="▶ PLAY"
+                    android:textSize="14sp"
+                    android:background="#FF5722"
+                    android:textColor="#fff"
+                    android:layout_marginEnd="5dp" />
+
+                <Button
+                    android:id="@+id/btnSetMaster1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="SET MASTER"
+                    android:textSize="12sp"
+                    android:background="#444"
+                    android:textColor="#FF5722" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Sync Button -->
+        <Button
+            android:id="@+id/btnSync"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🔗 SYNC DECKS"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="#4CAF50"
+            android:textColor="#fff"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Deck 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#222">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DECK 2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#00BCD4"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/ivBeatIndicator2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#444"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvTempolDeck2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempo: 100% (120)"
+                android:textSize="14sp"
+                android:textColor="#bbb"
+                android:layout_marginBottom="10dp" />
+
+            <SeekBar
+                android:id="@+id/seekBarDeck2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="50"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnPlayDeck2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="▶ PLAY"
+                    android:textSize="14sp"
+                    android:background="#00BCD4"
+                    android:textColor="#fff"
+                    android:layout_marginEnd="5dp" />
+
+                <Button
+                    android:id="@+id/btnSetMaster2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="SET MASTER"
+                    android:textSize="12sp"
+                    android:background="#444"
+                    android:textColor="#00BCD4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
